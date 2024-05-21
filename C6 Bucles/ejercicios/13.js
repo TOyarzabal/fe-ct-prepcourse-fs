@@ -5,6 +5,8 @@ function esEntero(num) {
   // Ejemplo: (-10) ---> true
   // De lo contrario, retorna false.
   // Tu código:
-}
-
+  if (typeof num !== "number") return(false)
+    else return Math.floor(num) === num;
+ }
+esEntero(-10)
 module.exports = esEntero;
